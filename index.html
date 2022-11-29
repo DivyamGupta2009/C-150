@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+      </head>
+    <body>
+        <a-scene background="color: #87CEEB">
+
+            <!-----------------------------Asset management------------------------------------->
+            <a-assets>      
+                <a-asset-item id = "fence" src = "wooden_fence/scene.gltf"></a-asset-item>
+              </a-assets>
+            <a-assets>      
+                <a-asset-item id = "train" src = "train.glb"></a-asset-item>
+            </a-assets>
+
+            <!-----------------------------Circular plane------------------------------------->              
+            <a-circle id="floor" position="0 -0.76 -25" rotation="-90 0 0" radius="100" shadow="receive: true" visible="true"
+      color="#C4A484">
+    </a-circle>
+
+    <!-----------------------------Fencing------------------------------------->
+    <a-entity gltf-model="#fence" position="0 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <a-entity gltf-model="#fence" position="-3 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <a-entity gltf-model="#fence" position="-6 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <a-entity gltf-model="#fence" position="-9 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <a-entity gltf-model="#fence" position="3 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <a-entity gltf-model="#fence" position="6 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <a-entity gltf-model="#fence" position="9 0 -5"  scale="0.1 0.1 0.1" rotation = "0 90 0">
+    </a-entity>
+
+    <!-----------------------------Train------------------------------------->
+    <a-entity gltf-model="#train" position="0 0 -4"  scale = "0.03 0.03 0.03" rotation = "0 0 0">
+    </a-entity>
+
+        </a-scene>
+    </body>
+</html>
